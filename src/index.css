@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gaming-bg text-gaming-text antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gaming-bg;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gaming-card rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gaming-accent;
+}
